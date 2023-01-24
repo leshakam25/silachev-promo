@@ -1,7 +1,12 @@
 import React from "react";
+import Wrapper from "./components/Wrapper/Wrapper";
 
 function App() {
-  return <div>promo</div>;
+  return (
+    <>
+      <Wrapper />
+    </>
+  );
 }
 
 export default App;
