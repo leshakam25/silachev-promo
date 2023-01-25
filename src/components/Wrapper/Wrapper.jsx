@@ -1,27 +1,30 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Box } from "@mui/system";
-import { Button, CardMedia, Container, Grid, Typography } from "@mui/material";
-import { fetchPromo } from "../../store/promoSlice";
-import loading from "../../images/statuses/loading.svg";
+import React from // , { useEffect }
+"react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { Box } from "@mui/system";
+// import { Button, CardMedia, Container, Grid, Typography } from "@mui/material";
+// import { fetchPromo, fetchServices } from "../../store/promoSlice";
+// import loading from "../../images/statuses/loading.svg";
 import Header from "../Header/Header";
 import About from "../../pages/About/About";
+import Services from "../../pages/Services/Services";
+import { services } from "../../data/data";
 
 const Wrapper = () => {
-  const dispatch = useDispatch();
-  const { status, error } = useSelector((state) => state.promo);
-  const data = useSelector((state) => state.promo.promo);
+  // const dispatch = useDispatch();
+  // const { status, error } = useSelector((state) => state.promo);
+  // const promoData = useSelector((state) => state.promo.promo);
+  // const servicesData = useSelector((state) => state.promo.services);
 
-  useEffect(() => {
-    dispatch(fetchPromo());
-  }, []);
-  const log = () => {
-    console.log("data", data, "status", status, "error", error);
-  };
+  // useEffect(() => {
+  //   dispatch(fetchPromo());
+  //   console.log(promoData);
+  // }, []);
+
   return (
     <>
       <Header />
-      {status === "loading" && (
+      {/* {status === "loading" && (
         <CardMedia
           component="img"
           src={loading}
@@ -31,12 +34,13 @@ const Wrapper = () => {
             height: "500px",
           }}
         />
-      )}
-      {status === "resolved" && (
-        <>
-          <About />
-        </>
-      )}
+      )} */}
+      {/* {status === "resolved" && ( */}
+      <>
+        <About />
+        <Services servicesData={services} />
+      </>
+      {/* )} */}
     </>
   );
 };

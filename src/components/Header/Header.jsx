@@ -58,8 +58,8 @@ export default function Header() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "black",
+              letterSpacing: ".5rem",
+              color: "inherit",
               textDecoration: "none",
             }}
           >
@@ -97,7 +97,9 @@ export default function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.title}</Typography>
+                  <Typography textAlign="center" fontFamily="Sofia Sans">
+                    {page.title}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -113,7 +115,7 @@ export default function Header() {
               display: { xs: "flex", md: "none" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".5rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -126,7 +128,12 @@ export default function Header() {
               <Button
                 key={page.id}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                href={page.link}
+                sx={{
+                  color: "inherit",
+                  display: "block",
+                  fontFamily: "Sofia Sans",
+                }}
               >
                 {page.title}
               </Button>

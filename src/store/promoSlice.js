@@ -15,6 +15,21 @@ export const fetchPromo = createAsyncThunk(
     }
   }
 );
+export const fetchServices = createAsyncThunk(
+  "promo/fetchServices",
+  async function (_, { rejectWithValue }) {
+    try {
+      const response = await fetch("http://localhost:3200/services");
+      if (!response.ok) {
+        throw new Error("Ошибка");
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
 
 const promoSlice = createSlice({
   name: "promo",
