@@ -23,7 +23,14 @@ export default function CustomSwiper({ data, rows }) {
         {data &&
           data.map((el) => (
             <SwiperSlide key={el.id}>
-              <Card sx={{ maxWidth: 345, boxShadow: "none", my: 2 }}>
+              <Card
+                sx={{
+                  boxShadow: "none",
+                  bgcolor: "#E0E1DD",
+                  height: "100%",
+                  my: 2,
+                }}
+              >
                 <CardActionArea
                   sx={{
                     display: "flex",
@@ -31,6 +38,7 @@ export default function CustomSwiper({ data, rows }) {
                     justifyContent: "center",
                     alignItems: "center",
                     height: "100%",
+                    p: 2,
                   }}
                 >
                   <Typography
@@ -38,15 +46,15 @@ export default function CustomSwiper({ data, rows }) {
                     variant="h4"
                     component="div"
                     fontFamily="Sofia Sans"
+                    lineHeight="100%"
                   >
                     {el.title}
                   </Typography>
                   <CardMedia
                     component="img"
-                    height="140"
-                    width="auto"
                     image={el.img}
                     alt="нет изображения("
+                    sx={{ borderRadius: "4px" }}
                   />
                 </CardActionArea>
               </Card>

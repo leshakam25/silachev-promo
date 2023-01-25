@@ -19,8 +19,7 @@ const About = () => {
           position: "relative",
         }}
       >
-        {" "}
-        <CardMedia
+        {/* <CardMedia
           component="img"
           src="https://i.postimg.cc/Z5QFFB1x/photo-2023-01-25-14-48-14.jpg"
           sx={{
@@ -32,7 +31,7 @@ const About = () => {
             left: "50%",
             transform: "translate(-50%, -50%)",
           }}
-        />
+        /> */}
         <Box
           variant="outlined"
           sx={{
