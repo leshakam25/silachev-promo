@@ -36,7 +36,7 @@ export default function Header() {
         background: "transparent",
         boxShadow: "none",
       }}
-      position="fixed"
+      position="sticky"
     >
       <Container maxWidth="xl">
         <Toolbar
@@ -59,7 +59,7 @@ export default function Header() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".5rem",
-              color: "inherit",
+              color: "#E0E1DD",
               textDecoration: "none",
             }}
           >
@@ -73,9 +73,8 @@ export default function Header() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{ color: "#778DA9" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -97,7 +96,11 @@ export default function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" fontFamily="Sofia Sans">
+                  <Typography
+                    textAlign="center"
+                    fontFamily="Sofia Sans"
+                    color="#778DA9"
+                  >
                     {page.title}
                   </Typography>
                 </MenuItem>
@@ -116,7 +119,7 @@ export default function Header() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".5rem",
-              color: "inherit",
+              color: "#778DA9",
               textDecoration: "none",
             }}
           >
@@ -130,7 +133,7 @@ export default function Header() {
                 onClick={handleCloseNavMenu}
                 href={page.link}
                 sx={{
-                  color: "inherit",
+                  color: "#E0E1DD",
                   display: "block",
                   fontFamily: "Sofia Sans",
                 }}

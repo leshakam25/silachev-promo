@@ -7,6 +7,7 @@ const About = () => {
     <Box
       id="about"
       sx={{
+        mt: -8,
         width: "100%",
         background: "#7C1A1B",
       }}
@@ -18,6 +19,20 @@ const About = () => {
           position: "relative",
         }}
       >
+        {" "}
+        <CardMedia
+          component="img"
+          src="https://i.postimg.cc/Z5QFFB1x/photo-2023-01-25-14-48-14.jpg"
+          sx={{
+            position: "absolute",
+            maxWidth: "800px",
+            maxHeight: "500px",
+            top: "50%",
+            opacity: "0.8",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        />
         <Box
           variant="outlined"
           sx={{

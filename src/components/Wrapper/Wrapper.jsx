@@ -1,5 +1,4 @@
-import React from // , { useEffect }
-"react";
+import React from "react"; // , { useEffect }
 // import { useDispatch, useSelector } from "react-redux";
 // import { Box } from "@mui/system";
 // import { Button, CardMedia, Container, Grid, Typography } from "@mui/material";
@@ -9,6 +8,7 @@ import Header from "../Header/Header";
 import About from "../../pages/About/About";
 import Services from "../../pages/Services/Services";
 import { services } from "../../data/data";
+import Cases from "../../pages/Cases/Cases";
 
 const Wrapper = () => {
   // const dispatch = useDispatch();
@@ -39,6 +39,7 @@ const Wrapper = () => {
       <>
         <About />
         <Services servicesData={services} />
+        <Cases />
       </>
       {/* )} */}
     </>

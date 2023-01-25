@@ -18,6 +18,7 @@ export default function CustomCard({ image, title, text }) {
       <CardActionArea
         sx={{
           py: 1,
+          height: "100%",
           width: "100%",
         }}
       >
@@ -61,10 +62,16 @@ export default function CustomCard({ image, title, text }) {
               component="div"
               color="#1B263B"
               fontFamily="Sofia Sans"
+              fontSize={{ xs: 16, sm: 20 }}
             >
               {title}
             </Typography>
-            <Typography variant="body2" color="#415A77" fontFamily="Sofia Sans">
+            <Typography
+              variant="body2"
+              color="#415A77"
+              fontFamily="Sofia Sans"
+              fontSize={{ xs: 14, sm: 18 }}
+            >
               {text}
             </Typography>
           </Grid>

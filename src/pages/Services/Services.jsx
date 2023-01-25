@@ -1,7 +1,7 @@
-import { Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 import CustomCard from "../../components/CustomCard/CustomCard";
-import { useEffect } from "react";
 import { Box } from "@mui/system";
+import BlockTitle from "../../components/BlockTitle/BlockTitle";
 
 const Services = ({ servicesData }) => {
   return (
@@ -12,9 +12,7 @@ const Services = ({ servicesData }) => {
         my: 2,
       }}
     >
-      <Typography fontFamily="Sofia Sans" variant="h3" fontWeight="700">
-        Направления
-      </Typography>
+      <BlockTitle title="Направления" />
       <Box
         sx={{
           mt: 2,

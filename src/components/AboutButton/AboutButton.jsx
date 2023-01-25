@@ -56,6 +56,7 @@ export default function AboutButton() {
             component="h2"
             fontFamily="Sofia Sans"
             fontSize={{ xs: 16, sm: 20 }}
+            color="#1B263B"
           >
             С 2010 года занимаюсь маркетингом. Эксперт в сферах HoReCa, Event,
             B2B и E-Commerce. Удалось поработать во всех направлениях
@@ -64,10 +65,12 @@ export default function AboutButton() {
           </Typography>
           <Typography
             textAlign="right"
+            variant="body2"
             id="modal-modal-description"
             fontSize={{ xs: 14, sm: 18 }}
             fontFamily="Sofia Sans"
             sx={{ mt: 2 }}
+            color="#415A77"
           >
             Это дало мне компетенции директора по маркетингу и опыт работы в
             более 50 проектах. Преподавал маркетинг в МИТРО и являюсь спикером
