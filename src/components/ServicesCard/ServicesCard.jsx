@@ -5,14 +5,16 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Grid } from "@mui/material";
 
-export default function CustomCard({ image, title, text }) {
+export default function ServicesCard({ image, title, text }) {
   return (
     <Card
       sx={{
         boxShadow: "none",
         bgcolor: "#E0E1DD",
-        my: 1,
-        width: { xs: "100%", md: "37vw" },
+        my: { xs: 1, sm: 3 },
+        mx: { xs: 0, sm: 3 },
+        width: { xs: "100%", md: "600px" },
+        boxShadow: 6,
       }}
     >
       <CardActionArea

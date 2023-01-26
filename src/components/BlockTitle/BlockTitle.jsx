@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const BlockTitle = ({ fz, title }) => {
+const BlockTitle = ({ fz, title, textDecoration, color }) => {
   return (
     <Typography
       fontFamily="Sofia Sans"
@@ -10,7 +10,8 @@ const BlockTitle = ({ fz, title }) => {
       fontSize={fz || { xs: 24, md: 32 }}
       my={2}
       sx={{
-        textDecoration: "underline",
+        color: `${color}`,
+        textDecoration: `${textDecoration}`,
       }}
     >
       {title}

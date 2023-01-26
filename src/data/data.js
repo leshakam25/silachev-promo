@@ -53,43 +53,84 @@ export const casesData = {
   marketingCase: [
     {
       id: 0,
-      title: "Небар",
-      img: "https://cdn1.flamp.ru/997210002d2c6ad4045e408717bb40f2.jpg",
+      title: "Эльчапо",
+      img: "https://sun6-21.userapi.com/s/v1/ig2/acrUl7DNCk2YoIxPJPiEOrfHMBueabYn60S23kCF4iGICqnWAbAUlAqWJaetGapR-hgdK5HtUk3AlLXbvNlXumZY.jpg?size=934x934&quality=96&crop=33,33,934,934&ava=1",
+      link: "http://xn--80avkd2b3af.xn--p1ai/",
     },
     {
       id: 1,
-      title: "Угрюмочная",
-      img: "https://pagelook.ru/upload/006/u645/cd/d2/3ecb8678.jpg",
+      title: "Ферамон",
+      img: "https://poligrafpiter.com/uploads/s/d/b/a/dbancz9g0zxw/img/autocrop/4e965eb8cb791a55b2f258042bd88548.jpg",
+      link: "https://feromon.group/",
     },
     {
       id: 2,
-      title: "Тайфун",
-      img: "",
+      title: "Небар",
+      img: "https://cdn1.flamp.ru/997210002d2c6ad4045e408717bb40f2.jpg",
+      link: "https://nebar.ru/",
     },
+
     {
       id: 3,
-      title: "Эльчапо",
-      img: "https://sun6-21.userapi.com/s/v1/ig2/acrUl7DNCk2YoIxPJPiEOrfHMBueabYn60S23kCF4iGICqnWAbAUlAqWJaetGapR-hgdK5HtUk3AlLXbvNlXumZY.jpg?size=934x934&quality=96&crop=33,33,934,934&ava=1",
+      title: "Строганов групп",
+      img: "https://lh6.ggpht.com/dmAVs5EE5XHtE02Mp_-MYMXs9J0MQzWfWy01t9WeObCW1c0nI84hpEuSPhe77nxehOo",
+      link: "https://stroganoffgroup.ru/",
     },
     {
       id: 4,
-      title: "Ферамон",
-      img: "https://poligrafpiter.com/uploads/s/d/b/a/dbancz9g0zxw/img/autocrop/4e965eb8cb791a55b2f258042bd88548.jpg",
+      title: "Угрюмочная",
+      img: "https://pagelook.ru/upload/006/u645/cd/d2/3ecb8678.jpg",
+      link: "https://ugrymochnaya.tilda.ws/",
     },
     {
       id: 5,
-      title: "Строганов групп",
-      img: "https://sun9-75.userapi.com/impf/Pav78rJPmICI4W0Ua8VH1jJQNDrBEoiJw_D_mw/Sx9N-JSDnVQ.jpg?size=604x276&quality=96&sign=fa562678ea2034d77ffd5c8c79527846&type=album",
+      title: "Тайфун",
+      img: "",
+      link: "",
     },
   ],
   franchiseCase: [
     {
-      id: 5,
+      id: 6,
       title: "Строганов групп",
-      img: "https://yandex-images.clstorage.net/h5zvt2147/56a370IIp03/-TbnmJTOd3oy1I9wbBdR6-aTDXV_IuLaQxY0yiXMPlk_W2jyAyPYWLwNTifZFFEoobqFk1l2KWIlT8rt3GYMs6v1Ih4VnaOr5NDKNjoAASu0B9ryarBlVg2bb0NrQuGVN5LwoBb1TwxuSpl2Fo-VObMslEIZ8n91M42WZYdvXPt7bboKGQ63ev5QiSfj0BO4qJgDejUvPZRKGi_LJoDpHXVZ8e2ffQNE61LTflHGRrH34hILmDs-9zLGHKFHqpp5OGi8j9qAOjmwXEBjIt0ZNuoYwn-0LTkcC1brgahErhp_U7gtnHsHj2FSFb3YzAN39SZZTZz1vvZ7gJ0tiOXSef7teAqYjXb-8BuJJiJbWHbgEMV8Oq08GIBeZs7vCiGfPJp3YBj1gkfpmpx5FYrBcLAv2o-S_j90swOeZwfiU7u3ajfKVg96O7dQx-CnFRRzJJbOtXQg8lNG1WaHJE2rWvWZd6gU_USAJZ3b_huNDbV971wKnfaw_vzP0qfJJFZ5uaA8hhcN-vOx0kan6pgf8KvXjbJ9qXndQdksQm-Jbtt8XLtqWDICz2udmTZXTQd5dWpUQ1_w8DP9DdMrA2HVu3HsOkLeSH31OdXHL20aGL5lUsy5uyJ4Gk5WYYGhg6GTOtb24t3wQobgkJ84EkpMdb5u0U3QMHV78YWdrsgrkzixoniGFo81fLwUS-hpUBn0oR8MvDWutN1E2OECLcHn3fobPuSf8M3DrlAXMhVDzHF2rJGCVXV0sbpP3yGMoZWxvuu3y9_NvDsz0Q-qJ9vYs-LaR776YbkcjlejQq5KLlL4Vb8nkPXEyyndWPlTDM90_S5djRF6MLt-xJVuwaUT9vzjeI4RT3a1N5pDJe-Y1rUmWIp_vaR01cNaLY9ow-RdfZI4btSyxsWgn5g7GYtMvvim2ggfsv55-8VWJcFkmrt56LiJVMF7N_sYwWopXt2zbtgNcnBu-JrDWi5Ioc",
+      img: "https://lh6.ggpht.com/dmAVs5EE5XHtE02Mp_-MYMXs9J0MQzWfWy01t9WeObCW1c0nI84hpEuSPhe77nxehOo",
+      link: "https://stroganoffgroup.ru/",
+    },
+    {
+      id: 7,
+      title: "Yauberu",
+      img: "https://84.img.avito.st/image/1/3cGblLa_cSjtMYMurdeNv3k3dy4jMXMiJfd12ik3cygvcQ",
+      link: "",
     },
   ],
 };
+
+export const contacts = [
+  {
+    id: 0,
+    title: "TELEGRAM",
+    link: "https://t.me/igor_silachev",
+    icon: "https://i.postimg.cc/9FsPm4Q8/tlg-icon.png",
+  },
+  {
+    id: 1,
+    title: "VKONTAKTE",
+    link: "https://vk.com/igi_i",
+    icon: "https://i.postimg.cc/T3mVpRyR/vk-icon.png",
+  },
+  {
+    id: 2,
+    title: "INSTAGRAM*",
+    link: "https://instagram.com/silachev_igi?igshid=YmMyMTA2M2Y=",
+    icon: "https://i.postimg.cc/NfK7v8B2/inst-icon.png",
+  },
+  {
+    id: 3,
+    title: "FACEBOOK*",
+    link: "",
+    icon: "https://i.postimg.cc/xjxyZpDS/fb-icon.png",
+  },
+];
 
 // Создание и запуск отдела маркетинга для сети заведений
 // Небар

@@ -15,8 +15,9 @@ const About = () => {
       <Container
         maxWidth="xl"
         sx={{
-          minHeight: 762,
+          minHeight: 600,
           position: "relative",
+          mb: 12,
         }}
       >
         {/* <CardMedia

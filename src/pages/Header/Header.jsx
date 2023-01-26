@@ -17,7 +17,7 @@ const pages = [
   { id: 3, title: "Контакты", link: "contacts" },
 ];
 // const pages = ["О себе", "Услуги", "Кейсы", "Контакты"];
-const companyName = "PROMO";
+const companyName = "LOGO";
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <AppBar
       sx={{
-        background: "transparent",
+        background: "#7C1A1B",
         boxShadow: "none",
       }}
       position="sticky"
@@ -54,13 +54,13 @@ export default function Header() {
             component="a"
             href="/"
             sx={{
-              mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".5rem",
               color: "#E0E1DD",
               textDecoration: "none",
+              fontSize: 32,
             }}
           >
             {companyName}
@@ -74,7 +74,7 @@ export default function Header() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
             >
-              <MenuIcon sx={{ color: "#778DA9" }} />
+              <MenuIcon sx={{ color: "#1B263B" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -119,7 +119,7 @@ export default function Header() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".5rem",
-              color: "#778DA9",
+              color: "#1B263B",
               textDecoration: "none",
             }}
           >
@@ -133,9 +133,14 @@ export default function Header() {
                 onClick={handleCloseNavMenu}
                 href={page.link}
                 sx={{
-                  color: "#E0E1DD",
+                  color: "#1B263B",
                   display: "block",
                   fontFamily: "Sofia Sans",
+                  bgcolor: "#E0E1DD",
+                  opacity: "0.5",
+                  borderRadius: "4px",
+                  mx: 0.4,
+                  ":hover": { color: "#E0E1DD" },
                 }}
               >
                 {page.title}

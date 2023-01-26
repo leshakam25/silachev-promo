@@ -12,7 +12,7 @@ export default function AboutButton() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
+    <>
       <Button
         variant="outlined"
         onClick={handleOpen}
@@ -27,7 +27,7 @@ export default function AboutButton() {
           ":hover": { border: "0.5px solid white" },
         }}
       >
-        ОБО МНЕ
+        О себе
       </Button>
       <Modal
         open={open}
@@ -41,10 +41,10 @@ export default function AboutButton() {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: { xs: "70vw", md: "40vw" },
-            height: { xs: "86vh", md: "40vh" },
+            width: { xs: "70vw", xl: "40vw" },
+            height: { xs: "70vh", xl: "40vh" },
             bgcolor: "background.paper",
-            borderRadius: "16px",
+            borderRadius: "8px",
             p: 4,
             overflow: "auto",
           }}
@@ -97,6 +97,6 @@ export default function AboutButton() {
           </IconButton>{" "}
         </Box>
       </Modal>
-    </div>
+    </>
   );
 }
