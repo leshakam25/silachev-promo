@@ -9,15 +9,16 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { NavLink } from "react-router-dom";
 
 const pages = [
-  { id: 0, title: "О себе", link: "about" },
+  { id: 0, title: "О себе", link: "/" },
   { id: 1, title: "Услуги", link: "services" },
   { id: 2, title: "Кейсы", link: "cases" },
   { id: 3, title: "Контакты", link: "contacts" },
 ];
 // const pages = ["О себе", "Услуги", "Кейсы", "Контакты"];
-const companyName = "LOGO";
+const companyName = "IGOR SILACHEV";
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,11 +30,14 @@ export default function Header() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  let activeStyle = {
+    textDecoration: "underline",
+  };
+  let activeClassName = "underline";
   return (
     <AppBar
       sx={{
-        background: "#7C1A1B",
+        background: "#778DA9",
         boxShadow: "none",
       }}
       position="sticky"
@@ -47,20 +51,19 @@ export default function Header() {
           }}
           disableGutters
         >
-          {/* LOGO */}
+          {/* LOGO */}{" "}
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="#"
             sx={{
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".5rem",
-              color: "#E0E1DD",
+              fontFamily: "BarcadeBrawlRegular",
+              color: "#0a0a0a",
               textDecoration: "none",
               fontSize: 32,
+              opacity: 0.7,
             }}
           >
             {companyName}
@@ -95,15 +98,20 @@ export default function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    fontFamily="Sofia Sans"
-                    color="#778DA9"
-                  >
-                    {page.title}
-                  </Typography>
-                </MenuItem>
+                <NavLink
+                  onClick={handleCloseNavMenu}
+                  style={{
+                    color: "#0a0a0a",
+                    fontFamily: "BarcadeBrawlRegular",
+                    display: "block",
+                    fontSize: 10,
+                    margin: "10px 8px",
+                  }}
+                  key={page.id}
+                  to={page.link}
+                >
+                  {page.title}
+                </NavLink>
               ))}
             </Menu>
           </Box>
@@ -111,15 +119,15 @@ export default function Header() {
           <Typography
             variant="h5"
             noWrap
+            href="#"
             component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
-              fontFamily: "monospace",
+              fontFamily: "BarcadeBrawlRegular",
               fontWeight: 700,
-              letterSpacing: ".5rem",
-              color: "#1B263B",
+              fontSize: 16,
+              color: "#0a0a0a",
               textDecoration: "none",
             }}
           >
@@ -128,23 +136,22 @@ export default function Header() {
           {/* desktop menu */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                key={page.id}
-                onClick={handleCloseNavMenu}
-                href={page.link}
-                sx={{
-                  color: "#1B263B",
+              <NavLink
+                style={{
+                  color: "#0a0a0a",
                   display: "block",
-                  fontFamily: "Sofia Sans",
-                  bgcolor: "#E0E1DD",
-                  opacity: "0.5",
+                  fontFamily: "BarcadeBrawlRegular",
+                  opacity: "0.6",
                   borderRadius: "4px",
-                  mx: 0.4,
-                  ":hover": { color: "#E0E1DD" },
+                  margin: "0 10px",
+                  padding: "10px",
+                  border: "4px dotted #0a0a0a",
                 }}
+                key={page.id}
+                to={page.link}
               >
                 {page.title}
-              </Button>
+              </NavLink>
             ))}
           </Box>
         </Toolbar>

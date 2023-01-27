@@ -10,9 +10,11 @@ export default function ContactCard({ title, link, icon }) {
     <Card
       sx={{
         bgcolor: "#E0E1DD",
-        m: 1,
-        width: { xs: "100%", sm: 160 },
+        my: 1,
+        mx: { xs: 0, sm: 1 },
+        width: { xs: "100%", md: 300 },
         boxShadow: 6,
+        opacity: 0.7,
       }}
     >
       <CardActionArea
@@ -38,9 +40,9 @@ export default function ContactCard({ title, link, icon }) {
         />
         <Typography
           sx={{
-            fontFamily: "Sofia Sans",
+            fontFamily: "BarcadeBrawlRegular",
             fontSize: 18,
-            fontWeight: 800,
+            fontWeight: 500,
             pl: 1,
           }}
         >

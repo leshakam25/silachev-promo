@@ -6,18 +6,12 @@ const About = () => {
   return (
     <Box
       id="about"
-      sx={{
-        mt: -8,
-        width: "100%",
-        background: "#7C1A1B",
-      }}
+      sx={{ width: "100%", minHeight: 670, background: "transparent" }}
     >
       <Container
         maxWidth="xl"
         sx={{
-          minHeight: 600,
           position: "relative",
-          mb: 12,
         }}
       >
         {/* <CardMedia
@@ -37,7 +31,7 @@ const About = () => {
           variant="outlined"
           sx={{
             position: "absolute",
-            bottom: "5%",
+            top: 400,
             left: "50%",
             transform: "translate(-50%, -50%)",
             px: 3,
@@ -45,6 +39,7 @@ const About = () => {
             borderRadius: 18,
             color: "white",
             m: "0 auto",
+            height: "100%",
           }}
         >
           <AboutButton />

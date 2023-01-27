@@ -17,17 +17,17 @@ export default function AboutButton() {
         variant="outlined"
         onClick={handleOpen}
         sx={{
-          border: "0.5px solid white",
+          border: "4px dotted white",
           color: "white",
-          borderRadius: "16px",
           px: 4,
-          fontFamily: "Sofia Sans",
-          fontWeight: 700,
+          fontSize: 32,
+
+          fontFamily: "BarcadeBrawlRegular",
           letterSpacing: "6px",
-          ":hover": { border: "0.5px solid white" },
+          ":hover": { border: "5px dotted black", color: "black" },
         }}
       >
-        О себе
+        ОБО МНЕ
       </Button>
       <Modal
         open={open}
@@ -44,7 +44,6 @@ export default function AboutButton() {
             width: { xs: "70vw", xl: "40vw" },
             height: { xs: "70vh", xl: "40vh" },
             bgcolor: "background.paper",
-            borderRadius: "8px",
             p: 4,
             overflow: "auto",
           }}
@@ -54,8 +53,9 @@ export default function AboutButton() {
             variant="h6"
             textAlign="left"
             component="h2"
-            fontFamily="Sofia Sans"
-            fontSize={{ xs: 16, sm: 20 }}
+            fontFamily="BarcadeBrawlRegular"
+            fontSize={{ xs: 8, sm: 12 }}
+            lineHeight="200%"
             color="#1B263B"
           >
             С 2010 года занимаюсь маркетингом. Эксперт в сферах HoReCa, Event,
@@ -67,8 +67,9 @@ export default function AboutButton() {
             textAlign="right"
             variant="body2"
             id="modal-modal-description"
-            fontSize={{ xs: 14, sm: 18 }}
-            fontFamily="Sofia Sans"
+            fontFamily="BarcadeBrawlRegular"
+            fontSize={{ xs: 7, sm: 10 }}
+            lineHeight="200%"
             sx={{ mt: 2 }}
             color="#415A77"
           >

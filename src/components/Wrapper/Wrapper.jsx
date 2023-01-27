@@ -8,8 +8,12 @@ import About from "../../pages/About/About";
 import Services from "../../pages/Services/Services";
 import { casesData, services } from "../../data/data";
 import Cases from "../../pages/Cases/Cases";
-import Header from "../../pages/Header/Header";
-import Footer from "../../pages/Footer/Footer";
+
+import { Route, Routes } from "react-router-dom";
+import { Box } from "@mui/material";
+import AnimatedBg from "react-animated-bg";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Wrapper = () => {
   // const dispatch = useDispatch();
@@ -23,26 +27,32 @@ const Wrapper = () => {
   // }, []);
 
   return (
-    <>
-      <Header />
-      {/* {status === "loading" && (
-        <CardMedia
-          component="img"
-          src={loading}
-          sx={{
-            m: "0 auto",
-            width: "auto",
-            height: "500px",
-          }}
+    <AnimatedBg
+      colors={[
+        "#212529",
+        "#343A40",
+        "#495057",
+        "#6C757D",
+        "#495057",
+        "#343A40",
+        "#212529",
+      ]}
+      duration={1}
+      timingFunction="linear"
+    >
+      <Header />{" "}
+      <Routes>
+        <Route path="/" element={<About />} />{" "}
+        <Route
+          path="/services"
+          element={<Services servicesData={services} />}
         />
-      )} */}
-      {/* {status === "resolved" && ( */}
-      <About />
-      <Services servicesData={services} />
-      <Cases casesData={casesData} />
+        <Route path="/cases" element={<Cases casesData={casesData} />} />
+        <Route path="/contact" element={<About />} />
+      </Routes>
       <Footer />
       {/* )} */}
-    </>
+    </AnimatedBg>
   );
 };
 

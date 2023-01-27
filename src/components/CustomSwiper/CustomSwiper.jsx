@@ -39,19 +39,22 @@ export default function CustomSwiper({ data }) {
         pagination={{
           type: "progressbar",
         }}
-        navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         {data &&
           data.map((el) => (
-            <SwiperSlide key={el.id}>
+            <SwiperSlide
+              key={el.id}
+              style={{
+                background: "transparent",
+                boxShadow: "none",
+              }}
+            >
               <Card
                 sx={{
-                  boxShadow: "none",
-                  bgcolor: "#E0E1DD",
-                  my: 2,
-                  boxShadow: 6,
+                  bgcolor: "transparent",
+                  opacity: 0.8,
                 }}
               >
                 <CardActionArea
@@ -67,11 +70,11 @@ export default function CustomSwiper({ data }) {
                   }}
                 >
                   <Typography
-                    gutterBottom
                     component="div"
-                    fontFamily="Sofia Sans"
                     lineHeight="100%"
-                    fontSize={{ xs: 22, sm: 26 }}
+                    fontFamily="BarcadeBrawlRegular"
+                    fontSize={{ xs: 10, sm: 12 }}
+                    gutterBottom
                   >
                     {el.title}
                   </Typography>

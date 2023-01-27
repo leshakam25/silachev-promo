@@ -4,13 +4,13 @@ import React from "react";
 const BlockTitle = ({ fz, title, textDecoration, color }) => {
   return (
     <Typography
-      fontFamily="Sofia Sans"
-      variant="h3"
+      fontFamily="BarcadeBrawlRegular"
       fontWeight="700"
-      fontSize={fz || { xs: 24, md: 32 }}
+      fontSize={fz || { xs: 12, md: 24 }}
       my={2}
+      mt={6}
       sx={{
-        color: `${color}`,
+        color: `#778DA9}`,
         textDecoration: `${textDecoration}`,
       }}
     >

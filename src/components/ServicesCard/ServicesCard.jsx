@@ -9,10 +9,10 @@ export default function ServicesCard({ image, title, text }) {
   return (
     <Card
       sx={{
-        boxShadow: "none",
         bgcolor: "#E0E1DD",
-        my: { xs: 1, sm: 3 },
-        mx: { xs: 0, sm: 3 },
+        opacity: 0.7,
+        my: { xs: 1, sm: 1 },
+        mx: { xs: 0, sm: 1 },
         width: { xs: "100%", md: "600px" },
         boxShadow: 6,
       }}
@@ -63,16 +63,16 @@ export default function ServicesCard({ image, title, text }) {
               variant="h5"
               component="div"
               color="#1B263B"
-              fontFamily="Sofia Sans"
-              fontSize={{ xs: 16, sm: 20 }}
+              fontFamily="BarcadeBrawlRegular"
+              fontSize={{ xs: 10, sm: 14 }}
             >
               {title}
             </Typography>
             <Typography
               variant="body2"
               color="#415A77"
-              fontFamily="Sofia Sans"
-              fontSize={{ xs: 14, sm: 18 }}
+              fontFamily="BarcadeBrawlRegular"
+              fontSize={{ xs: 6, sm: 10 }}
             >
               {text}
             </Typography>

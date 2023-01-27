@@ -1,0 +1,11 @@
+::-webkit-scrollbar {
+   width: 0 }
+   @font-face {
+      font-family: 'BarcadeBrawlRegular';
+      src: local('BarcadeBrawlRegular'), url(./fonts/BarcadeBrawlRegular.ttf) format('woff');
+      /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+    }
+    a {
+      text-decoration: none;
+    }

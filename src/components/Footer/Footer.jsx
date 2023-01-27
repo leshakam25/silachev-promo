@@ -8,7 +8,8 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        bgcolor: "#0D1B2A",
+        bgcolor: "transparent",
+        width: "100%",
         pt: 1,
         mt: 2,
       }}
@@ -22,7 +23,7 @@ const Footer = () => {
             alignItems: "center",
             flexWrap: "wrap",
             py: 2,
-            maxWidth: 500,
+            maxWidth: 700,
             width: "100%",
             m: "0 auto",
           }}
@@ -40,10 +41,10 @@ const Footer = () => {
             component="div"
             color="white"
             sx={{
-              fontFamily: "Sofia Sans",
+              fontFamily: "BarcadeBrawlRegular",
               opacity: 0.3,
-              fontSize: 12,
-              maxWidth: 350,
+              fontSize: 8,
+              maxWidth: 800,
             }}
           >
             *В России деятельность принадлежащих Meta Platforms (признана
