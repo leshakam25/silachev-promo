@@ -2,19 +2,24 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import { contactsData } from "../../data/data";
 import ContactCard from "../../components/ContactCard/ContactCard";
-import BlockTitle from "../../components/BlockTitle/BlockTitle";
 
-const Footer = () => {
+const Contacts = () => {
   return (
     <Box
       sx={{
         bgcolor: "transparent",
-        width: "100%",
-        pt: 1,
-        mt: 2,
       }}
     >
-      <Container maxWidth="xl">
+      <Container
+        maxWidth="xl"
+        sx={{
+          minHeight: "94vh",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -56,4 +61,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contacts;

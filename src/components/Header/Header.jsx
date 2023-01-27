@@ -100,13 +100,13 @@ export default function Header() {
               {pages.map((page) => (
                 <NavLink
                   onClick={handleCloseNavMenu}
-                  style={{
-                    color: "#0a0a0a",
-                    fontFamily: "BarcadeBrawlRegular",
-                    display: "block",
-                    fontSize: 10,
-                    margin: "10px 8px",
-                  }}
+                  // style={{
+                  //   color: "#0a0a0a",
+                  //   fontFamily: "BarcadeBrawlRegular",
+                  //   display: "block",
+                  //   fontSize: 10,
+                  //   margin: "10px 8px",
+                  // }}
                   key={page.id}
                   to={page.link}
                 >
@@ -137,16 +137,16 @@ export default function Header() {
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <NavLink
-                style={{
-                  color: "#0a0a0a",
-                  display: "block",
-                  fontFamily: "BarcadeBrawlRegular",
-                  opacity: "0.6",
-                  borderRadius: "4px",
-                  margin: "0 10px",
-                  padding: "10px",
-                  border: "4px dotted #0a0a0a",
-                }}
+                // style={{
+                //   color: "#0a0a0a",
+                //   display: "block",
+                //   fontFamily: "BarcadeBrawlRegular",
+                //   opacity: "0.6",
+                //   borderRadius: "4px",
+                //   margin: "0 10px",
+                //   padding: "10px",
+                //   border: "4px dotted #0a0a0a",
+                // }}
                 key={page.id}
                 to={page.link}
               >

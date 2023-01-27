@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Box
       id="about"
-      sx={{ width: "100%", minHeight: 670, background: "transparent" }}
+      sx={{ width: "100%", minHeight: "94vh", background: "transparent" }}
     >
       <Container
         maxWidth="xl"

@@ -8,7 +8,7 @@ const Services = ({ servicesData }) => {
     <Container
       maxWidth="xl"
       sx={{
-        minHeight: 660,
+        minHeight: "88vh",
       }}
     >
       <BlockTitle title="Направления:" textDecoration="underline" />
@@ -18,6 +18,8 @@ const Services = ({ servicesData }) => {
           flexDirection: "row",
           flexWrap: "wrap",
           justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
         }}
       >
         {servicesData &&

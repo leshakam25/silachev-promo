@@ -105,7 +105,7 @@ export const casesData = {
   ],
 };
 
-export const contacts = [
+export const contactsData = [
   {
     id: 0,
     title: "TELEGRAM",

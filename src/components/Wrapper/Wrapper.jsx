@@ -14,6 +14,7 @@ import { Box } from "@mui/material";
 import AnimatedBg from "react-animated-bg";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Contacts from "../../pages/Contacts/Contacts";
 
 const Wrapper = () => {
   // const dispatch = useDispatch();
@@ -48,9 +49,9 @@ const Wrapper = () => {
           element={<Services servicesData={services} />}
         />
         <Route path="/cases" element={<Cases casesData={casesData} />} />
-        <Route path="/contact" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
       {/* )} */}
     </AnimatedBg>
   );

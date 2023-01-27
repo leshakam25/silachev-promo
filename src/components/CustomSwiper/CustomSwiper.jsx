@@ -4,14 +4,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./styles.css";
 import { Pagination, Navigation } from "swiper";
-import {
-  Card,
-  CardActionArea,
-  CardMedia,
-  Container,
-  Typography,
-} from "@mui/material";
-import { Box } from "@mui/system";
+import { Container } from "@mui/material";
+import SwiperCard from "./SwiperCard";
 
 export default function CustomSwiper({ data }) {
   const checkWidth = () => {
@@ -44,61 +38,8 @@ export default function CustomSwiper({ data }) {
       >
         {data &&
           data.map((el) => (
-            <SwiperSlide
-              key={el.id}
-              style={{
-                background: "transparent",
-                boxShadow: "none",
-              }}
-            >
-              <Card
-                sx={{
-                  bgcolor: "transparent",
-                  opacity: 0.8,
-                }}
-              >
-                <CardActionArea
-                  href={el.link}
-                  target="_blank"
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                    p: 2,
-                  }}
-                >
-                  <Typography
-                    component="div"
-                    lineHeight="100%"
-                    fontFamily="BarcadeBrawlRegular"
-                    fontSize={{ xs: 10, sm: 12 }}
-                    gutterBottom
-                  >
-                    {el.title}
-                  </Typography>
-                  <Box
-                    sx={{
-                      borderRadius: "4px",
-                      height: "200px",
-                      width: "auto",
-                      bgcolor: "white",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      image={el.img}
-                      alt="На это месте должна быть картинка :)"
-                      sx={{
-                        borderRadius: "4px",
-                        height: "100%",
-                        width: "100%",
-                      }}
-                    />
-                  </Box>
-                </CardActionArea>
-              </Card>
+            <SwiperSlide key={el.id}>
+              <SwiperCard title={el.title} img={el.img} link={el.link} />
             </SwiperSlide>
           ))}
       </Swiper>

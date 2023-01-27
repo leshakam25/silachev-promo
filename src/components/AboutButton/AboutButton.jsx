@@ -21,7 +21,6 @@ export default function AboutButton() {
           color: "white",
           px: 4,
           fontSize: 32,
-
           fontFamily: "BarcadeBrawlRegular",
           letterSpacing: "6px",
           ":hover": { border: "5px dotted black", color: "black" },

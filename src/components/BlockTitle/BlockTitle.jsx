@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const BlockTitle = ({ fz, title, textDecoration, color }) => {
+const BlockTitle = ({ fz, title, textDecoration }) => {
   return (
     <Typography
       fontFamily="BarcadeBrawlRegular"
@@ -10,7 +10,7 @@ const BlockTitle = ({ fz, title, textDecoration, color }) => {
       my={2}
       mt={6}
       sx={{
-        color: `#778DA9}`,
+        color: `#778DA9`,
         textDecoration: `${textDecoration}`,
       }}
     >
