@@ -2,11 +2,12 @@ import { Box, Button, CardMedia } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import AboutButton from "../../components/AboutButton/AboutButton";
+
 const About = () => {
   return (
     <Box
       id="about"
-      sx={{ width: "100%", minHeight: "94vh", background: "transparent" }}
+      sx={{ width: "100%", minHeight: "100%", background: "transparent" }}
     >
       <Container
         maxWidth="xl"
@@ -31,7 +32,7 @@ const About = () => {
           variant="outlined"
           sx={{
             position: "absolute",
-            top: 400,
+            top: { xs: 200, md: 320 },
             left: "50%",
             transform: "translate(-50%, -50%)",
             px: 3,

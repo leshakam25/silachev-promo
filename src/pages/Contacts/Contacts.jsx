@@ -13,7 +13,7 @@ const Contacts = () => {
       <Container
         maxWidth="xl"
         sx={{
-          minHeight: "94vh",
+          height: "100%",
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
@@ -31,6 +31,7 @@ const Contacts = () => {
             maxWidth: 700,
             width: "100%",
             m: "0 auto",
+            mt: "18%",
           }}
         >
           {contactsData &&

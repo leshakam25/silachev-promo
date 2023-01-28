@@ -10,8 +10,9 @@ const BlockTitle = ({ fz, title, textDecoration }) => {
       my={2}
       mt={6}
       sx={{
-        color: `#778DA9`,
+        color: `#0a0a0a`,
         textDecoration: `${textDecoration}`,
+        opacity: 0.6,
       }}
     >
       {title}

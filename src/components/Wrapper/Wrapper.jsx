@@ -1,4 +1,4 @@
-import React from "react"; // , { useEffect }
+import React from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import { Box } from "@mui/system";
 // import { Button, CardMedia, Container, Grid, Typography } from "@mui/material";
@@ -8,40 +8,31 @@ import About from "../../pages/About/About";
 import Services from "../../pages/Services/Services";
 import { casesData, services } from "../../data/data";
 import Cases from "../../pages/Cases/Cases";
-
 import { Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material";
-import AnimatedBg from "react-animated-bg";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import Contacts from "../../pages/Contacts/Contacts";
+import RetroBG from "../RetroBg/RetroBG";
+import "./style.css";
 
 const Wrapper = () => {
   // const dispatch = useDispatch();
   // const { status, error } = useSelector((state) => state.promo);
   // const promoData = useSelector((state) => state.promo.promo);
   // const servicesData = useSelector((state) => state.promo.services);
-
   // useEffect(() => {
   //   dispatch(fetchPromo());
   //   console.log(promoData);
   // }, []);
 
   return (
-    <AnimatedBg
-      colors={[
-        "#212529",
-        "#343A40",
-        "#495057",
-        "#6C757D",
-        "#495057",
-        "#343A40",
-        "#212529",
-      ]}
-      duration={1}
-      timingFunction="linear"
+    <Box
+      sx={{
+        bgcolor: "transparent",
+      }}
     >
-      <Header />{" "}
+      <Header />
+      {/* <RetroBG /> */}
       <Routes>
         <Route path="/" element={<About />} />{" "}
         <Route
@@ -51,9 +42,7 @@ const Wrapper = () => {
         <Route path="/cases" element={<Cases casesData={casesData} />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
-      {/* <Footer /> */}
-      {/* )} */}
-    </AnimatedBg>
+    </Box>
   );
 };
 

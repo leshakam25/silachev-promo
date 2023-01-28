@@ -5,7 +5,7 @@ import BlockTitle from "../../components/BlockTitle/BlockTitle";
 
 const Cases = ({ casesData }) => {
   return (
-    <Container maxWidth="xl" sx={{ minHeight: "90vh" }}>
+    <Container maxWidth="xl" sx={{ height: "100%" }}>
       <BlockTitle title="КЕЙСЫ:" textDecoration="underline" />
       <BlockTitle title="Создание и запуск отдела маркетинга для сети заведений" />
       <CustomSwiper data={casesData.marketingCase} />

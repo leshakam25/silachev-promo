@@ -7,9 +7,8 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import { NavLink } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const pages = [
   { id: 0, title: "О себе", link: "/" },
@@ -17,7 +16,6 @@ const pages = [
   { id: 2, title: "Кейсы", link: "cases" },
   { id: 3, title: "Контакты", link: "contacts" },
 ];
-// const pages = ["О себе", "Услуги", "Кейсы", "Контакты"];
 const companyName = "IGOR SILACHEV";
 
 export default function Header() {
@@ -30,14 +28,10 @@ export default function Header() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  let activeStyle = {
-    textDecoration: "underline",
-  };
-  let activeClassName = "underline";
   return (
     <AppBar
       sx={{
-        background: "#778DA9",
+        background: "transparent",
         boxShadow: "none",
       }}
       position="sticky"
@@ -94,24 +88,31 @@ export default function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
+                opacity: 0.8,
                 display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
-                <NavLink
-                  onClick={handleCloseNavMenu}
-                  // style={{
-                  //   color: "#0a0a0a",
-                  //   fontFamily: "BarcadeBrawlRegular",
-                  //   display: "block",
-                  //   fontSize: 10,
-                  //   margin: "10px 8px",
-                  // }}
+                <Button
                   key={page.id}
-                  to={page.link}
+                  sx={{
+                    color: "#0a0a0a",
+                    fontFamily: "BarcadeBrawlRegular",
+                    display: "block",
+                    fontSize: 10,
+                    margin: "10px 8px",
+                  }}
                 >
-                  {page.title}
-                </NavLink>
+                  <NavLink
+                    style={{
+                      color: "inherit",
+                    }}
+                    onClick={handleCloseNavMenu}
+                    to={page.link}
+                  >
+                    {page.title}
+                  </NavLink>
+                </Button>
               ))}
             </Menu>
           </Box>
@@ -137,20 +138,27 @@ export default function Header() {
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <NavLink
-                // style={{
-                //   color: "#0a0a0a",
-                //   display: "block",
-                //   fontFamily: "BarcadeBrawlRegular",
-                //   opacity: "0.6",
-                //   borderRadius: "4px",
-                //   margin: "0 10px",
-                //   padding: "10px",
-                //   border: "4px dotted #0a0a0a",
-                // }}
+                style={{
+                  color: "inherit",
+                }}
                 key={page.id}
                 to={page.link}
               >
-                {page.title}
+                <Button
+                  sx={{
+                    color: "#0a0a0a",
+                    display: "block",
+                    fontFamily: "BarcadeBrawlRegular",
+                    opacity: "0.6",
+                    borderRadius: "4px",
+                    margin: "0 10px",
+                    padding: "10px",
+                    border: "4px dotted #0a0a0a",
+                    ":hover": { border: "4px dotted white", color: "white" },
+                  }}
+                >
+                  {page.title}
+                </Button>
               </NavLink>
             ))}
           </Box>
