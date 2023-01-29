@@ -24,9 +24,11 @@ export default function ContactCard({ title, link, icon }) {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
+          justifyContent: "space-between",
           px: 2,
           py: 1,
-          width: "100%",
+          m: "0 auto",
+          width: "300px",
         }}
       >
         <CardMedia

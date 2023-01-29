@@ -41,8 +41,8 @@ export default function ServicesCard({ image, title, text }) {
           >
             <CardMedia
               sx={{
-                height: 80,
-                width: 80,
+                height: 60,
+                width: 60,
               }}
               component="img"
               image={image}

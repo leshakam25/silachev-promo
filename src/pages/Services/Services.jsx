@@ -8,29 +8,33 @@ const Services = ({ servicesData }) => {
     <Container
       maxWidth="xl"
       sx={{
-        height: "100%",
+        height: "90%",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      <BlockTitle title="Направления:" textDecoration="underline" />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%",
-        }}
-      >
-        {servicesData &&
-          servicesData.map((el) => (
-            <CustomCard
-              key={el.id}
-              image={el.image}
-              title={el.title}
-              text={el.text}
-            />
-          ))}
+      <Box>
+        <BlockTitle title="Направления:" textDecoration="underline" />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          {servicesData &&
+            servicesData.map((el) => (
+              <CustomCard
+                key={el.id}
+                image={el.image}
+                title={el.title}
+                text={el.text}
+              />
+            ))}
+        </Box>
       </Box>
     </Container>
   );

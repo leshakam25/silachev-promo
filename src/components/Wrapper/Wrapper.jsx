@@ -14,6 +14,7 @@ import Header from "../Header/Header";
 import Contacts from "../../pages/Contacts/Contacts";
 import RetroBG from "../RetroBg/RetroBG";
 import "./style.css";
+import Order from "../../pages/Order/Order";
 
 const Wrapper = () => {
   // const dispatch = useDispatch();
@@ -29,6 +30,8 @@ const Wrapper = () => {
     <Box
       sx={{
         bgcolor: "transparent",
+        width: "100vw",
+        height: "100vh",
       }}
     >
       <Header />
@@ -40,7 +43,8 @@ const Wrapper = () => {
           element={<Services servicesData={services} />}
         />
         <Route path="/cases" element={<Cases casesData={casesData} />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/contacts" element={<Contacts />} />{" "}
+        <Route path="/order" element={<Order />} />
       </Routes>
     </Box>
   );

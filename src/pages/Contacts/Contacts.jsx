@@ -8,6 +8,7 @@ const Contacts = () => {
     <Box
       sx={{
         bgcolor: "transparent",
+        height: "88%",
       }}
     >
       <Container
@@ -31,7 +32,6 @@ const Contacts = () => {
             maxWidth: 700,
             width: "100%",
             m: "0 auto",
-            mt: "18%",
           }}
         >
           {contactsData &&

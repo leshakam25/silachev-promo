@@ -15,6 +15,7 @@ const pages = [
   { id: 1, title: "Услуги", link: "services" },
   { id: 2, title: "Кейсы", link: "cases" },
   { id: 3, title: "Контакты", link: "contacts" },
+  { id: 4, title: "Заказ", link: "order" },
 ];
 const companyName = "IGOR SILACHEV";
 
@@ -33,6 +34,7 @@ export default function Header() {
       sx={{
         background: "transparent",
         boxShadow: "none",
+        mb: 4,
       }}
       position="sticky"
     >
@@ -50,12 +52,12 @@ export default function Header() {
             variant="h6"
             noWrap
             component="a"
-            href="#"
             sx={{
               display: { xs: "none", md: "flex" },
               fontFamily: "BarcadeBrawlRegular",
               color: "#0a0a0a",
               textDecoration: "none",
+              letterSpacing: "-6px",
               fontSize: 32,
               opacity: 0.7,
             }}
@@ -88,31 +90,30 @@ export default function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                opacity: 0.8,
                 display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
-                <Button
+                <NavLink
                   key={page.id}
-                  sx={{
-                    color: "#0a0a0a",
-                    fontFamily: "BarcadeBrawlRegular",
-                    display: "block",
-                    fontSize: 10,
-                    margin: "10px 8px",
+                  style={{
+                    color: "inherit",
                   }}
+                  onClick={handleCloseNavMenu}
+                  to={page.link}
                 >
-                  <NavLink
-                    style={{
-                      color: "inherit",
+                  <Button
+                    sx={{
+                      color: "#0a0a0a",
+                      fontFamily: "BarcadeBrawlRegular",
+                      display: "block",
+                      fontSize: 10,
+                      margin: "10px 8px",
                     }}
-                    onClick={handleCloseNavMenu}
-                    to={page.link}
                   >
                     {page.title}
-                  </NavLink>
-                </Button>
+                  </Button>{" "}
+                </NavLink>
               ))}
             </Menu>
           </Box>
@@ -120,7 +121,6 @@ export default function Header() {
           <Typography
             variant="h5"
             noWrap
-            href="#"
             component="a"
             sx={{
               mr: 2,
@@ -135,7 +135,13 @@ export default function Header() {
             {companyName}
           </Typography>
           {/* desktop menu */}
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
             {pages.map((page) => (
               <NavLink
                 style={{
@@ -147,14 +153,14 @@ export default function Header() {
                 <Button
                   sx={{
                     color: "#0a0a0a",
+                    fontSize: 11,
                     display: "block",
                     fontFamily: "BarcadeBrawlRegular",
                     opacity: "0.6",
-                    borderRadius: "4px",
-                    margin: "0 10px",
-                    padding: "10px",
-                    border: "4px dotted #0a0a0a",
-                    ":hover": { border: "4px dotted white", color: "white" },
+                    margin: "0 2px",
+                    padding: "4px",
+                    border: "3px dotted #0a0a0a",
+                    ":hover": { border: "3px solid white", color: "white" },
                   }}
                 >
                   {page.title}

@@ -22,12 +22,12 @@ export default function AboutButton() {
           fontFamily: "BarcadeBrawlRegular",
           letterSpacing: "6px",
           color: "white",
-          border: "4px dotted white",
+          border: "5px dotted white",
           px: 4,
-          ":hover": { border: "5px dotted black", color: "black" },
+          ":hover": { border: "5px solid black", color: "black" },
         }}
       >
-        ОБО МНЕ
+        О СЕБЕ
       </Button>
       <Modal
         open={open}
@@ -42,11 +42,10 @@ export default function AboutButton() {
             left: "50%",
             transform: "translate(-50%, -50%)",
             width: { xs: "80vw", xl: "40vw" },
-            height: { xs: "90vh", xl: "40vh" },
-            bgcolor: "background.paper",
+            height: { xs: "60vh", xl: "40vh" },
             p: 2,
             overflow: "auto",
-            opacity: 0.8,
+            bgcolor: "#778DA9",
           }}
         >
           <Typography
@@ -66,7 +65,7 @@ export default function AboutButton() {
             таргетированной рекламы, дизайна, а также разработки сайтов.{" "}
           </Typography>
           <Typography
-            textAlign="left"
+            textAlign="right"
             variant="body2"
             id="modal-modal-description"
             fontFamily="BarcadeBrawlRegular"

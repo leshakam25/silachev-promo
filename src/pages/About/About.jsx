@@ -7,39 +7,22 @@ const About = () => {
   return (
     <Box
       id="about"
-      sx={{ width: "100%", minHeight: "100%", background: "transparent" }}
+      sx={{ width: "100%", height: "88%", background: "transparent" }}
     >
       <Container
         maxWidth="xl"
         sx={{
           position: "relative",
+          height: "100%",
         }}
       >
-        {/* <CardMedia
-          component="img"
-          src="https://i.postimg.cc/Z5QFFB1x/photo-2023-01-25-14-48-14.jpg"
-          sx={{
-            position: "absolute",
-            maxWidth: "800px",
-            maxHeight: "500px",
-            top: "50%",
-            opacity: "0.8",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        /> */}
         <Box
           variant="outlined"
           sx={{
-            position: "absolute",
-            top: { xs: 200, md: 320 },
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            px: 3,
-            py: 1,
-            borderRadius: 18,
-            color: "white",
-            m: "0 auto",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
             height: "100%",
           }}
         >

@@ -56,18 +56,21 @@ export const casesData = {
       title: "Эльчапо",
       img: "https://sun6-21.userapi.com/s/v1/ig2/acrUl7DNCk2YoIxPJPiEOrfHMBueabYn60S23kCF4iGICqnWAbAUlAqWJaetGapR-hgdK5HtUk3AlLXbvNlXumZY.jpg?size=934x934&quality=96&crop=33,33,934,934&ava=1",
       link: "http://xn--80avkd2b3af.xn--p1ai/",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
     },
     {
       id: 1,
       title: "Ферамон",
       img: "https://poligrafpiter.com/uploads/s/d/b/a/dbancz9g0zxw/img/autocrop/4e965eb8cb791a55b2f258042bd88548.jpg",
       link: "https://feromon.group/",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
     },
     {
       id: 2,
       title: "Небар",
       img: "https://cdn1.flamp.ru/997210002d2c6ad4045e408717bb40f2.jpg",
       link: "https://nebar.ru/",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
     },
 
     {
@@ -75,18 +78,21 @@ export const casesData = {
       title: "Строганов групп",
       img: "https://lh6.ggpht.com/dmAVs5EE5XHtE02Mp_-MYMXs9J0MQzWfWy01t9WeObCW1c0nI84hpEuSPhe77nxehOo",
       link: "https://stroganoffgroup.ru/",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
     },
     {
       id: 4,
       title: "Угрюмочная",
       img: "https://pagelook.ru/upload/006/u645/cd/d2/3ecb8678.jpg",
       link: "https://ugrymochnaya.tilda.ws/",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
     },
     {
       id: 5,
       title: "Тайфун",
       img: "",
       link: "",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
     },
   ],
   franchiseCase: [
@@ -131,16 +137,3 @@ export const contactsData = [
     icon: "https://i.postimg.cc/xjxyZpDS/fb-icon.png",
   },
 ];
-
-// Создание и запуск отдела маркетинга для сети заведений
-// Небар
-// Угрюмочная
-// Тайфун
-// Эльчапо
-// Ферамон
-// Строганов групп
-
-// Игорь Эльчапо, [16.01.2023 13:20]
-// Подготовка компании к созданию  к запуску и продажи франшизы
-// Фёст Клининг хаус
-// Yauberu

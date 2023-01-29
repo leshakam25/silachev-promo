@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./styles.css";
+import "./style.css";
 import { Pagination, Navigation } from "swiper";
 import { Container } from "@mui/material";
 import SwiperCard from "./SwiperCard";
@@ -26,23 +26,31 @@ export default function CustomSwiper({ data }) {
     }
   };
   return (
-    <Container maxWidth="xl" sx={{ mt: 4, mb: 8 }}>
-      <Swiper
-        slidesPerView={checkWidth()}
-        spaceBetween={30}
-        pagination={{
-          type: "progressbar",
-        }}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-        {data &&
-          data.map((el) => (
-            <SwiperSlide key={el.id}>
-              <SwiperCard title={el.title} img={el.img} link={el.link} />
-            </SwiperSlide>
-          ))}
-      </Swiper>
-    </Container>
+    <Swiper
+      slidesPerView={checkWidth()}
+      spaceBetween={30}
+      pagination={{
+        type: "progressbar",
+      }}
+      modules={[Pagination, Navigation]}
+      className="mySwiper"
+    >
+      {data &&
+        data.map((el) => (
+          <SwiperSlide
+            style={{
+              backgroundColor: "inherit",
+            }}
+            key={el.id}
+          >
+            <SwiperCard
+              title={el.title}
+              img={el.img}
+              link={el.link}
+              text={el.text}
+            />
+          </SwiperSlide>
+        ))}
+    </Swiper>
   );
 }
