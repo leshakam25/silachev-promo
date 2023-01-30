@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import { squareMenu } from "../../images/servicesIcons/squareMenu.svg";
 
 export default function AboutButton() {
   const [open, setOpen] = React.useState(false);
@@ -41,23 +42,20 @@ export default function AboutButton() {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: { xs: "80vw", xl: "40vw" },
-            height: { xs: "60vh", xl: "40vh" },
-            p: 2,
+            width: { xs: "80vw", xl: "50vw" },
+            height: { xs: "60vh", xl: "50vh" },
             overflow: "auto",
             bgcolor: "#778DA9",
+            p: 5,
           }}
         >
           <Typography
             id="modal-modal-title"
-            variant="h6"
             textAlign="left"
-            component="h2"
             fontFamily="BarcadeBrawlRegular"
             fontSize={{ xs: 8, sm: 12 }}
             lineHeight="200%"
             color="#1B263B"
-            marginTop={4}
           >
             С 2010 года занимаюсь маркетингом.
             <br /> Эксперт в сферах HoReCa, Event, B2B и E-Commerce.
@@ -65,17 +63,16 @@ export default function AboutButton() {
             таргетированной рекламы, дизайна, а также разработки сайтов.{" "}
           </Typography>
           <Typography
-            textAlign="right"
-            variant="body2"
+            textAlign="left"
             id="modal-modal-description"
             fontFamily="BarcadeBrawlRegular"
-            fontSize={{ xs: 7, sm: 10 }}
+            fontSize={{ xs: 8, sm: 12 }}
             lineHeight="200%"
-            sx={{ mt: 2 }}
             color="#415A77"
+            mt={5}
           >
-            Это дало мне компетенции директора по маркетингу и опыт работы в
-            более 50 проектах.
+            Все это дало мне компетенции директора по маркетингу и опыт работы
+            более чем в 50 проектах.
             <br /> Преподавал маркетинг в МИТРО, на сегодня являюсь спикером
             Российского общества Знания.
             <br /> Обучил множество специалистов, с которыми успешно реализовал

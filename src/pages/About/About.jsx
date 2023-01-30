@@ -1,4 +1,4 @@
-import { Box, Button, CardMedia } from "@mui/material";
+import { Box, Button, CardMedia, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import AboutButton from "../../components/AboutButton/AboutButton";

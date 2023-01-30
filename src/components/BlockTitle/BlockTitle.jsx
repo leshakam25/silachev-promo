@@ -7,8 +7,6 @@ const BlockTitle = ({ fz, title, textDecoration }) => {
       fontFamily="BarcadeBrawlRegular"
       fontWeight="700"
       fontSize={fz || { xs: 12, md: 24 }}
-      my={2}
-      mt={6}
       sx={{
         color: `#0a0a0a`,
         textDecoration: `${textDecoration}`,

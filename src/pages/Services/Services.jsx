@@ -8,7 +8,7 @@ const Services = ({ servicesData }) => {
     <Container
       maxWidth="xl"
       sx={{
-        height: "90%",
+        height: "85%",
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",

@@ -74,36 +74,45 @@ const SwiperCard = ({ title, img, link, text }) => {
             left: "50%",
             transform: "translate(-50%, -50%)",
             width: { xs: "80vw", xl: "80vw" },
-            height: { xs: "90vh", xl: "90vh" },
+            height: { xs: "70vh", xl: "90vh" },
             bgcolor: "#778DA9",
             p: 2,
             overflow: "auto",
             borderRadius: "4px",
           }}
         >
-          <CardMedia
-            component="img"
-            image={img}
-            alt="На это месте должна быть картинка :)"
+          <Box
             sx={{
-              height: "55%",
-              width: "100%",
-              my: 3,
-            }}
-          />
-          <Typography
-            textAlign="left"
-            component="div"
-            lineHeight="140%"
-            fontFamily="BarcadeBrawlRegular"
-            fontSize={{ xs: 16, sm: 36 }}
-            sx={{
-              opacity: 0.7,
-              marginY: { xs: 1, md: 4 },
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
             }}
           >
-            {title}
-          </Typography>
+            <CardMedia
+              component="img"
+              image={img}
+              alt="На это месте должна быть картинка :)"
+              sx={{
+                height: "300px",
+                width: "auto",
+                my: 3,
+              }}
+            />
+            <Typography
+              textAlign="left"
+              component="div"
+              lineHeight="140%"
+              fontFamily="BarcadeBrawlRegular"
+              fontSize={{ xs: 16, sm: 36 }}
+              sx={{
+                opacity: 0.7,
+                marginY: { xs: 1, md: 4 },
+              }}
+            >
+              {title}
+            </Typography>
+          </Box>
           <Typography
             textAlign="left"
             variant="body2"

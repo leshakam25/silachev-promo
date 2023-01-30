@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import { Box } from "@mui/system";
 
 export default function ContactCard({ title, link, icon }) {
   return (
@@ -21,35 +22,42 @@ export default function ContactCard({ title, link, icon }) {
         href={link}
         target="_blank"
         sx={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
           px: 2,
           py: 1,
           m: "0 auto",
-          width: "300px",
+          width: "100%",
         }}
       >
-        <CardMedia
-          component="img"
-          image={icon}
-          alt="green iguana"
+        <Box
           sx={{
-            width: 32,
-            height: 32,
-          }}
-        />
-        <Typography
-          sx={{
-            fontFamily: "BarcadeBrawlRegular",
-            fontSize: 18,
-            fontWeight: 500,
-            pl: 1,
+            width: { xs: "300px", md: "100%" },
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            m: "0 auto",
           }}
         >
-          {title}
-        </Typography>
+          <CardMedia
+            component="img"
+            image={icon}
+            alt="green iguana"
+            sx={{
+              width: 32,
+              height: 32,
+            }}
+          />
+          <Typography
+            sx={{
+              fontFamily: "BarcadeBrawlRegular",
+              fontSize: 18,
+              fontWeight: 500,
+              pl: 1,
+            }}
+          >
+            {title}
+          </Typography>
+        </Box>
       </CardActionArea>
     </Card>
   );

@@ -53,14 +53,14 @@ export const casesData = {
   marketingCase: [
     {
       id: 0,
-      title: "Эльчапо",
+      title: "Эль Чапо",
       img: "https://sun6-21.userapi.com/s/v1/ig2/acrUl7DNCk2YoIxPJPiEOrfHMBueabYn60S23kCF4iGICqnWAbAUlAqWJaetGapR-hgdK5HtUk3AlLXbvNlXumZY.jpg?size=934x934&quality=96&crop=33,33,934,934&ava=1",
       link: "http://xn--80avkd2b3af.xn--p1ai/",
       text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
     },
     {
       id: 1,
-      title: "Ферамон",
+      title: "Феромон",
       img: "https://poligrafpiter.com/uploads/s/d/b/a/dbancz9g0zxw/img/autocrop/4e965eb8cb791a55b2f258042bd88548.jpg",
       link: "https://feromon.group/",
       text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae minima beatae placeat tempora, asperiores ipsa aliquam voluptatibus repellendus vel nemo! Maxime eos nostrum exercitationem repudiandae excepturi quisquam tempora! Tempora, ullam ipsa. Consequuntur tenetur ducimus est recusandae, consectetur repellat, nemo deserunt possimus, pariatur alias aliquid. Repudiandae quos omnis, unde veritatis ullam natus adipisci commodi aperiam ut quas odio cupiditate eveniet. A consequatur fuga culpa alias esse iusto aliquid sapiente quidem maiores, quibusdam unde numquam ea hic explicabo libero accusamus labore illum autem reiciendis provident asperiores eaque? Corporis, placeat eum, est velit aliquid quibusdam numquam quidem deserunt reiciendis debitis omnis ex?",
@@ -116,24 +116,24 @@ export const contactsData = [
     id: 0,
     title: "TELEGRAM",
     link: "https://t.me/igor_silachev",
-    icon: "https://i.postimg.cc/9FsPm4Q8/tlg-icon.png",
+    icon: "https://i.postimg.cc/YSVvfd74/Telegram2.png",
   },
   {
     id: 1,
     title: "VKONTAKTE",
     link: "https://vk.com/igi_i",
-    icon: "https://i.postimg.cc/T3mVpRyR/vk-icon.png",
+    icon: "https://i.postimg.cc/6QPjXxrM/VK.png",
   },
   {
     id: 2,
     title: "INSTAGRAM*",
     link: "https://instagram.com/silachev_igi?igshid=YmMyMTA2M2Y=",
-    icon: "https://i.postimg.cc/NfK7v8B2/inst-icon.png",
+    icon: "https://i.postimg.cc/sxjZHvMq/Instagram2.png",
   },
   {
     id: 3,
     title: "FACEBOOK*",
     link: "",
-    icon: "https://i.postimg.cc/xjxyZpDS/fb-icon.png",
+    icon: "https://i.postimg.cc/5t1kQ8Nc/Facebook2.png",
   },
 ];

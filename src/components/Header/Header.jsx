@@ -34,9 +34,8 @@ export default function Header() {
       sx={{
         background: "transparent",
         boxShadow: "none",
-        mb: 4,
       }}
-      position="sticky"
+      position="static"
     >
       <Container maxWidth="xl">
         <Toolbar
@@ -123,6 +122,7 @@ export default function Header() {
             noWrap
             component="a"
             sx={{
+              letterSpacing: "-2.4px",
               mr: 2,
               display: { xs: "flex", md: "none" },
               fontFamily: "BarcadeBrawlRegular",
